@@ -23,8 +23,6 @@
     "babel-plugin-transform-object-rest-spread": "*",
     "babel-plugin-transform-react-display-name": "*",
     "babel-polyfill": "*",
-    "babel-preset-es2015": "*",
-    "babel-preset-react": "*",
     "css-loader": "*",
     "eslint": "*",
     "eslint-plugin-babel": "*",
@@ -46,7 +44,6 @@
     "style-loader": "*",
     "stylus": "*",
     "stylus-loader": "*",
-    "webpack": "*",
     "webpack-dev-middleware": "*",
     "webpack-hot-middleware": "*"
   },
@@ -54,13 +51,20 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "expect": "*",
     "expect-jsx": "*",
     "i": "^0.3.6",
+    "jshint": "^2.10.1",
+    "jshint-loader": "^0.8.4",
     "mocha": "*",
+    "node-libs-browser": "^2.2.0",
     "npm": "^6.9.0",
     "react-addons-test-utils": "*",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   }
 }
