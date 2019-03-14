@@ -1,7 +1,22 @@
-import React from 'raect';
+import React, { Component } from "raect";
+import Photo from "./Photo";
+import comments from "./Comments";
+import Comments from "./Comments";
 
-const Single = () =>(
-    <h5>Hello i'm comming from Single component</h5>
-);
+class Single extends Component {
+  render() {
+    const i = this.props.posts.findIndex(
+      post => post.code === this.props.params.postId
+    );
+    const post = this.props.posts[i];
+
+    return (
+      <div>
+        <Photo i={i} post={post} {...this.props} />;
+        <Comments/>
+      </div>
+    );
+  }
+}
 
 export default Single;
