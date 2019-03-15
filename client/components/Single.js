@@ -1,6 +1,5 @@
 import React, { Component } from "raect";
 import Photo from "./Photo";
-import comments from "./Comments";
 import Comments from "./Comments";
 
 class Single extends Component {
@@ -9,7 +8,6 @@ class Single extends Component {
       post => post.code === this.props.params.postId
     );
     const post = this.props.posts[i];
-
     return (
       <div>
         <Photo i={i} post={post} {...this.props} />;
